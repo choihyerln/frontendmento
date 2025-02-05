@@ -1,11 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "@/pages/Home.tsx";
+import MainLayout from "@/layout/MainLayout";
+import Main from "@/pages/Main";
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Main />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
