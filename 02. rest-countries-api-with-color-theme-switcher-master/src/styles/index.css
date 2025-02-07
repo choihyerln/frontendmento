@@ -20,9 +20,6 @@ a {
   font-weight: 800;
   text-decoration: inherit;
 }
-a:hover {
-  /*color: #535bf2;*/
-}
 
 body {
   margin: 0;
@@ -56,13 +53,16 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input::placeholder {
+  font-family: "NutinoSans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: hsl(0, 0%, 98%);
-  }
-  a:hover {
-    /*color: #747bff;*/
   }
   button {
     background-color: #f9f9f9;
@@ -71,5 +71,5 @@ button:focus-visible {
 
 @font-face {
   font-family: "NutinoSans";
-  src: url("public/fonts/NunitoSans.ttf");
+  src: url("fonts/NunitoSans.ttf");
 }

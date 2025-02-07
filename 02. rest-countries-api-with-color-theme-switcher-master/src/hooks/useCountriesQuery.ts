@@ -9,7 +9,7 @@ const fetchCountries = async () => {
 const useCountriesQuery = () => {
   return useQuery({
     queryKey: ["countries"],
-    queryFn: fetchCountries
+    queryFn: fetchCountries,
   });
 };
 
