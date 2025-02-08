@@ -28,7 +28,7 @@ export default tseslint.config(
       "prettier/prettier": [
         "error",
         {
-          trailingComma: "none" // JSX에서 쉼표가 강제되지 않도록 설정
+          trailingComma: "es5" // JSX에서 쉼표가 강제되지 않도록 설정
         }
       ]
     }
