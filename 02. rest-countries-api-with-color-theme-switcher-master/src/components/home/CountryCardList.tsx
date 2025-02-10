@@ -39,8 +39,8 @@ export default function CountryCardList() {
       <div className="flex justify-center">
         <div className="grid grid-cols-4 gap-15 p-6">
           {countries?.map((country: Country) => (
-            <Link to={`/detail/${country.name.common}`}>
-              <CountryCard key={country.cca3} country={country} />
+            <Link key={country.cca3} to={`/detail/${country.name.common}`}>
+              <CountryCard country={country} />
             </Link>
           ))}
         </div>

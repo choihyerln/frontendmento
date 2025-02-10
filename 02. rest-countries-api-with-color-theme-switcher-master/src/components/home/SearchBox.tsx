@@ -1,6 +1,7 @@
 import { useAtom } from "jotai";
 import { useState } from "react";
 import { countrySearchKeywordAtom, selectedRegionAtom } from "@/atom/atom";
+import { AiOutlineDown } from "react-icons/ai";
 
 const SearchInput = () => {
   const [atom, setAtom] = useAtom<string>(countrySearchKeywordAtom);
@@ -40,27 +41,15 @@ const RegionFilter = () => {
         className="inline-flex justify-center items-center text-sm text-gray-600 dark:text-white dark:bg-[#1E2028]
         shadow-[0_2px_8px_rgba(0,0,0,0.1)] dark:shadow-[0_2px_8px_rgba(0,0,0,0.3)]
         hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_4px_12px_rgba(0,0,0,0.4)]
-        transition-all duration-200 focus:outline-none"
+        transition-all duration-200 focus:outline-none gap-2"
       >
         {atom === "All" ? "Filter by Region" : atom}
-        <svg
-          className="w-4 h-4 ml-2 text-gray-500 dark:text-gray-400"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M19 9l-7 7-7-7"
-          ></path>
-        </svg>
+        <AiOutlineDown />
       </button>
 
       {/* Dropdown */}
       {isOpen && (
-        <div className="absolute right-0 mt-3 w-64">
+        <div className="absolute mt-2 w-44">
           <div
             className="relative bg-white dark:bg-[#1E2028] rounded-lg 
             shadow-[0_4px_12px_rgba(0,0,0,0.1),0_2px_4px_rgba(0,0,0,0.05)] 
