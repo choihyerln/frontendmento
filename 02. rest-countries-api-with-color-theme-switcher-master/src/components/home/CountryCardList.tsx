@@ -22,7 +22,9 @@ export default function CountryCardList({ query }: Props) {
   if (error)
     return (
       <div className="px-15">
-        ❌ Something went wrong! Error: {error.message}
+        <p className="font-bold">
+          ❌ Something went wrong! Error: {error.message}
+        </p>
       </div>
     );
 
