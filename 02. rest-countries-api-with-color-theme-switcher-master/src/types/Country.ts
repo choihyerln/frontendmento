@@ -39,4 +39,5 @@ export interface DetailCountry {
   languages: {
     [key: string]: string;
   };
+  borders?: string[];
 }
