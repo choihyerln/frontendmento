@@ -37,7 +37,7 @@ const RegionFilter = () => {
       <button
         type="button"
         onClick={toggleDropdown}
-        className="inline-flex justify-center items-center text-sm text-gray-600 dark:text-white bg-white dark:bg-[#1E2028] rounded-sm
+        className="inline-flex justify-center items-center text-sm text-gray-600 dark:text-white dark:bg-[#1E2028]
         shadow-[0_2px_8px_rgba(0,0,0,0.1)] dark:shadow-[0_2px_8px_rgba(0,0,0,0.3)]
         hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_4px_12px_rgba(0,0,0,0.4)]
         transition-all duration-200 focus:outline-none"
