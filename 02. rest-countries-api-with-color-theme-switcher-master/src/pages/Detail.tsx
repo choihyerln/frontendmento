@@ -23,7 +23,9 @@ export default function Detail() {
 
   return (
     <div
-      className={"flex flex-col items-center w-[1440px] h-[791px] mt-[68px]"}
+      className={
+        "flex flex-col items-center w-[1440px] h-[791px] mt-[68px] bg-white"
+      }
     >
       {country && (
         <div className="pt-20 px-15">

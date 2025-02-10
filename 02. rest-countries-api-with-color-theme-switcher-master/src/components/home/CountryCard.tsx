@@ -21,7 +21,7 @@ export default function CountryCard({ country }: CountryCardProps) {
 
       {/* 콘텐츠 영역 */}
       <div className="flex flex-1 flex-col p-5">
-        <p className="text-base mb-2">{country.name.common}</p>
+        <p className="text-base font-extrabold mb-2">{country.name.common}</p>
         <p className="text-sm mb-1">
           <span className="font-bold">Population: </span>
           <span className="font-normal">
