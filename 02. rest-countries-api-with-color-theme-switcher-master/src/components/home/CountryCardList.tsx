@@ -37,7 +37,7 @@ export default function CountryCardList() {
   return (
     <Suspense>
       <div className="flex justify-center">
-        <div className="grid grid-cols-4 gap-15 p-6">
+        <div className="grid grid-cols-4 gap-15 p-6 mb-10">
           {countries?.map((country: Country) => (
             <Link key={country.cca3} to={`/detail/${country.name.common}`}>
               <CountryCard country={country} />
