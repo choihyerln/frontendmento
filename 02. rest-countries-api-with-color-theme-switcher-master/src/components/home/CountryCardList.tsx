@@ -3,12 +3,18 @@ import { Country } from "@/types/Country.ts";
 import useCountriesQuery from "@/hooks/useCountriesQuery.ts";
 import { Suspense } from "react";
 import HomeSkeleton from "@/pages/HomeSkeleton";
+import { countrySearchKeywordAtom, selectedRegionAtom } from "@/atom/atom";
+import { useAtomValue } from "jotai";
+import { Link } from "react-router-dom";
 
-interface Props {
-  query: string; // atom
-}
-export default function CountryCardList({ query }: Props) {
-  const { data: countries, isLoading, error } = useCountriesQuery(query);
+export default function CountryCardList() {
+  const keyword = useAtomValue(countrySearchKeywordAtom);
+  const region = useAtomValue(selectedRegionAtom);
+  const {
+    data: countries,
+    isLoading,
+    error,
+  } = useCountriesQuery(keyword, region);
 
   // TODO: suspense 작업 필요
   if (isLoading)
@@ -33,7 +39,9 @@ export default function CountryCardList({ query }: Props) {
       <div className="flex justify-center">
         <div className="grid grid-cols-4 gap-15 p-6">
           {countries?.map((country: Country) => (
-            <CountryCard key={country.cca3} country={country} />
+            <Link to={`/detail/${country.cca3}`}>
+              <CountryCard key={country.cca3} country={country} />
+            </Link>
           ))}
         </div>
       </div>
