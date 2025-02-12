@@ -27,7 +27,7 @@ export default function CountryCardList() {
   // TODO: error 컴포넌트 작업 필요
   if (error)
     return (
-      <div className="px-15">
+      <div className="px-16">
         <p className="font-bold">
           ❌ Something went wrong! Error: {error.message}
         </p>

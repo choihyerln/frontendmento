@@ -66,14 +66,14 @@ const RegionFilter = () => {
                 className="p-2 space-y-1"
                 onClick={() => handleSelect(item)}
               >
-                <p
+                <li
                   className="flex items-center px-4 py-3 text-sm text-black dark:text-white rounded-md hover:cursor-pointer
                     hover:bg-gray-50 dark:hover:bg-[#252731] 
                     hover:shadow-[0_2px_8px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_2px_8px_rgba(0,0,0,0.3)]
                     transition-all duration-200"
                 >
                   {item}
-                </p>
+                </li>
               </div>
             ))}
           </div>
