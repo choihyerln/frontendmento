@@ -74,3 +74,5 @@ Users should be able to:
 
 ## Question
 1. 컴포넌트 경로 절대경로로 통일하는지? (상대경로가 짧다면 그걸로 대체하는지?)
+2. button 클릭 후 경로 이동 시 useNavigate를 사용하는게 좋을까?
+3. region 선택 시 url에 기록을 남기자. 지금은 endpoint 설정 안되어 있음.
