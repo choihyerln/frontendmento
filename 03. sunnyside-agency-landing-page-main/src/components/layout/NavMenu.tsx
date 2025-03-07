@@ -5,7 +5,7 @@ export default function NavMenu() {
       <li className="cursor-pointer">Services</li>
       <li className="cursor-pointer">Projects</li>
       <li
-        className="font-fraunces cursor-pointer font-bold text-black bg-white px-6 py-4 rounded-4xl
+        className="font-fraunces cursor-pointer font-bold text-black bg-white px-6 py-3 rounded-4xl
       hover:bg-[rgba(255,255,255,0.3)] hover:text-white transition-colors duration-300"
       >
         CONTACT
