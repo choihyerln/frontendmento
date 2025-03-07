@@ -1,5 +1,5 @@
-import FooterIcons from "@/components/FooterIcons";
-import FooterMenu from "@/components/FooterMenu";
+import FooterIcons from "@/components/layout/FooterIcons";
+import FooterMenu from "@/components/layout/FooterMenu";
 import Logo from "@/components/layout/Logo";
 
 const Footer = () => {
