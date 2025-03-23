@@ -11,7 +11,7 @@ const Audience = () => {
       </p>
       <p
         className="uppercase mt-4 cursor-pointer
-           hover:underline hover:decoration-[hsl(51,100%,49%)] hover:decoration-8"
+           hover:underline hover:decoration-[#fbae85] hover:decoration-8"
       >
         learn more
       </p>
